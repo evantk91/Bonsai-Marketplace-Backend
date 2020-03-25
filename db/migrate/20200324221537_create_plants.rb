@@ -5,7 +5,6 @@ class CreatePlants < ActiveRecord::Migration[6.0]
       t.string :species
       t.integer :price
       t.string :photo
-      t.references :user, null: false, foreign_key: true
 
       t.timestamps
     end
