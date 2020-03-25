@@ -5,7 +5,7 @@ class AuthenticationController < ApplicationController
         if !@user
             render status: :unauthorized
         else
-            if !@user.authenticate(parms[:password])
+            if !@user.authenticate(params[:password])
                 render status: :unauthorized
             else
                 secret = Rails.application.secret_key_base

@@ -3,7 +3,7 @@ class PlantsController < ApplicationController
 
     def index
         @plants = Plant.all
-        render json: @scores
+        render json: @plants
     end
 
     def create
