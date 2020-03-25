@@ -12,7 +12,7 @@ class PlantsController < ApplicationController
             photo: params[:photo]
         )
 
-        render json: @plant, status: created
+        render json: @plant
     end
 
     def destroy
