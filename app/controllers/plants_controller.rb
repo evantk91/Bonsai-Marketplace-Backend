@@ -1,7 +1,9 @@
 class PlantsController < ApplicationController
+    before_action :authenticate, only: [:index, :create, :destroy]
+
     def index
         @plants = Plant.all
-        render json: @scores
+        render json: @plants
     end
 
     def create

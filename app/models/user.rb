@@ -3,5 +3,6 @@ class User < ApplicationRecord
     has_many :plants, through: :user_plants
     has_secure_password
     validates :username, presence: true
+    validates :email, presence: true
     validates :password, presence: true, length: {minimum: 5}
 end
