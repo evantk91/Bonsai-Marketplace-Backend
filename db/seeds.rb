@@ -9,8 +9,6 @@
 User.destroy_all
 Plant.destroy_all
 
-usr1 = User.create(username: "Ryan", password: "ryang")
-
 plt1 = Plant.create(title: "Bouquet", species: "Bougainvillea", price: 100, photo: "https://web-app-kitchen-sink.s3.us-west-2.amazonaws.com/files/1585086004999_1%20Bonsai%20-%20Bougainvillea.jpg")
 plt2 = Plant.create(title: "Ice Plant Banyan", species: "Delosperma Cooperi", price: 150, photo: "https://web-app-kitchen-sink.s3.us-west-2.amazonaws.com/files/1585086163426_2%20Bonsai%20-%20Delosperma%20cooperi%20formal%20upright.jpg")
 plt3 = Plant.create(title: "Ice Plant Cascade", species: "Delosperma Cooperi", price: 45, photo: "https://web-app-kitchen-sink.s3.us-west-2.amazonaws.com/files/1585086213970_3%20Bonsai%20-%20Delosperma%20cooperi%20semi%20cascade.jpg")
